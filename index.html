@@ -1,2 +1,254 @@
-<h1>Mi Portfolio</h1>
-<p>modificacion en repositorio remoto</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+  <title>index portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">dalequesaleelportfoliooo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container-fluid d-flex h-100 w-100">
+    <div class="row pt-3">
+      <!--carrusel de fotos-->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner h-100">
+                <div class="carousel-item active">
+                  <img src="imagenes\atoq-1.jpg" class="d-block  w-100" alt="..." width="640" height="270">
+                </div>
+                <div class="carousel-item">
+                  <img src="imagenes\atoq2.jpg" class="d-block  w-100" alt="..."width="640" height="270">
+                </div>
+                <div class="carousel-item">
+                  <img src="imagenes\atoq3.jpg" class="d-block  w-100" alt="..."width="640" height="270">
+                </div>
+              </div>
+      </div>
+      <!--carta con foto-->
+      <div class="col-12 col-lg-4 m-1">
+          <div class="card h-100  bg-primary">
+            <div class="card-body">
+              <div class="d-flex ">
+                  <img src="imagenes\la imaginacion toma el poder.png" alt="" class="border border-danger border-3 rounded-circle " width="180" height="150">
+              <!--</div>
+              <div class="d-flex justify-content-center"> -->
+                  <div class="p-2 ">
+                      <h6 class="m-0 h6">un h6 que diga algo  </h6>
+                      <p class="m-0 hs.5">un p que lo explique un poco</p>
+                  </div>
+              </div>
+              <div>
+                  <p class="hs.5 pt-2">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, ipsa cupiditate.  provident? </p>
+              </div>
+             
+           </div>
+
+          </div>
+      </div>
+      <!--about-->
+     <div class="col-12 col-lg-5 m-1 ms-0 align-self-center">
+        <div class="card h-lg-75  bg-primary">
+          <div class="card-body">
+            <div class="d-flex">
+              <div class="ps-lg-1">
+                  <ul class="m-0 h5">un par de items 
+                   <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis fugiat maiores illo repudiandae ea, nesciunt veniam modi minima rem placeat vitae velit corporis minus ipsum. Iusto ad quidem iste?</p>
+                  </ul>
+
+                  <ul class="m-0 h5">un par de items </ul>
+                  <ul class="m-0 h5">un par de items </ul>
+                  <ul class="m-0 h5">un par de items </ul>
+              </div>
+             </div>
+        </div>
+
+        </div>
+     </div>
+     <!--botonera-->
+     <div class="col-12 col-lg-2 m-2 ms-0 align-self-center ">
+        <div class="card h-90 w-100 bg-primary ">
+          <div class="card-body">
+            <div class="d-flex justify-content-center">
+              <div class="ps-lg-1">
+                <button type="button" class="btn btn-secondary m-1" disabled>Button</button>
+                <button type="button" class="btn btn-secondary m-1" disabled>Button</button>
+                <button type="button" class="btn btn-secondary m-1" disabled>Button</button>
+                <button type="button" class="btn btn-secondary m-1" disabled>Button</button>
+              </div>
+           </div>
+        </div>
+
+        </div>
+     </div>
+    </div>
+  </header>
+ 
+  <main class="container-fluid d-flex  ">
+       <div class="row h-100 w-100">
+        <!--EDUCACION-->
+          <div class="col-12 p-2">
+            <article class="card h-100  bg-danger">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-start">
+                        <div class="ps-lg-2">
+                            <ul class="m-0 h6">un h6 que diga algo  </ul>
+                            <p class="m-0 hs.5">un p que lo explique un poco</p>
+                            <ul class="m-0 h6">un h6 que diga algo  </ul>
+                            <p class="m-0 hs.5">un p que lo explique un poco</p>
+                            <ul class="m-0 h6">un h6 que diga algo  </ul>
+                            <p class="m-0 hs.5">un p que lo explique un poco</p>
+                            <ul class="m-0 h6">un h6 que diga algo  </ul>
+                            <p class="m-0 hs.5">un p que lo explique un poco</p>
+                        </div>
+                    </div>            
+                </div>
+            </article>
+          </div>
+          <!--EXPERIENCIA LABORAL-->
+          <div class="col-12 p-2">
+          <article class="card h-100  bg-warning">
+              <div class="card-body">
+                  <div class="d-flex align-items-center justify-content-end">
+                      <div class="ps-lg-2">
+                          <ul class="m-0 h6">un h6 que diga algo  </ul>
+                          <p class="m-0 hs.5">un p que lo explique un poco</p>
+                          <ul class="m-0 h6">un h6 que diga algo  </ul>
+                          <p class="m-0 hs.5">un p que lo explique un poco</p>
+                          <ul class="m-0 h6">un h6 que diga algo  </ul>
+                          <p class="m-0 hs.5">un p que lo explique un poco</p>
+                          <ul class="m-0 h6">un h6 que diga algo  </ul>
+                          <p class="m-0 hs.5">un p que lo explique un poco</p>
+                      </div>
+                  </div>            
+              </div>
+          </article>
+      
+      
+          
+          </div>
+          <!--H y S Skils-->
+         <div class="col-12 p-2">
+          <article class="card h-100 bg-primary">
+              <div class="card-body">
+                  <div class="d-flex">
+                      <div class="ps-lg-2">
+                          <ul class="m-0 h6">un h6 que diga algo  </ul>
+                          <p class="m-0 hs.5">un p que lo explique un poco</p>
+                          <ul class="m-0 h6">un h6 que diga algo  </ul>
+                          <p class="m-0 hs.5">un p que lo explique un poco</p>
+                          <ul class="m-0 h6">un h6 que diga algo  </ul>
+                          <p class="m-0 hs.5">un p que lo explique un poco</p>
+                          <ul class="m-0 h6">un h6 que diga algo  </ul>
+                          <p class="m-0 hs.5">un p que lo explique un poco</p>
+                      </div>
+                      
+                  </div>            
+              </div>
+          </article>
+          </div>
+          <!--PROYECTOS-->
+          <div class="col-12 p-2">
+        <article class="card h-100  bg-success">
+            <div class="card-body">
+                <div class="d-flex align-items-center justify-content-end">
+                    <div class="ps-lg-2">
+                        <ul class="m-0 h6">un h6 que diga algo  </ul>
+                        <p class="m-0 hs.5">un p que lo explique un poco</p>
+                        <ul class="m-0 h6">un h6 que diga algo  </ul>
+                        <p class="m-0 hs.5">un p que lo explique un poco</p>
+                        <ul class="m-0 h6">un h6 que diga algo  </ul>
+                        <p class="m-0 hs.5">un p que lo explique un poco</p>
+                        <ul class="m-0 h6">un h6 que diga algo  </ul>
+                        <p class="m-0 hs.5">un p que lo explique un poco</p>
+                    </div>
+                    
+                </div>            
+            </div>
+        </article>
+          </div>
+      </div>
+                  
+  </main>
+    
+  <footer class="bottom text-bg-dark p-3 " >
+      <p>como sera esto del maquetado mixto.. averr</p>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
+
+<!--<h1> Título principal de la practica HTML</h1>   
+	<p>Estamos aprendiendo HTML y necesitamos practicar para que se nos fije el conocimiento, en poco tiempo voy a poder maquetar un sitio web completo. en este documento de practica veremos los distintos HTML que podemos encontrar </p>
+
+	  <h2>Primero HTML semántico.</h2>  
+		    <p>HTML Semántico es el uso de las etiquetas HTML para reforzar la semántica, o el significado, de la información en las páginas web más que simplemente redefinir su forma de presentación (apariencia). El HTML semántico es procesado por los navegadores web regulares así como por muchos otros agentes de usuarios. Las CSS son usadas para sugerir la presentación de la página a usuarios humanos.</p>
+		  <h3>Primer subtema Usos.</h3>
+			<p>DHTML permite a los desarrolladores añadir a las páginas efectos que de otra manera serían difíciles de alcanzar. En resumen: los lenguajes de scripting sirven para cambiar la estructura DOM.</p>
+		  <h3>Segundo subtema Compatibilidad con navegadores. </h3> 
+			<p>El soporte para DHTML con acceso al DOM fue introducido en Internet Explorer 4.0. Aunque había otra implementación más básica en Netscape Navigator 4.0, no todos los elementos HTML eran representados en el DOM.</p>
+	  
+      <h2>Segunda idea principal HTML5.</h2>  
+		    <p>HTML 5 (HyperText Markup Language, versión 5) es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. HTML5 específica dos variantes de sintaxis para HTML: una «clásica», HTML (text/html), conocida como HTML5, y una variante XHTML conocida como sintaxis XHTML 5 que deberá servirse con sintaxis XML.</p>
+		  <h3>Primer subtema Nuevos elementos </h3>
+			<p>HTML5 establece una serie de nuevos elementos y atributos que reflejan el uso típico de los sitios web modernos. Algunos de ellos son técnicamente similares a las etiquetas div y span, pero tienen un significado semántico, como por ejemplo nav (bloque de navegación del sitio web) y footer.</p>
+		  <h3>Segundo subtema Nuevas API y Javascript </h3>
+			<p>API para hacer Drag & Drop. Mediante eventos.
+        API para trabajar Off-Line. Permite descargar todos los contenidos necesarios y trabajar en local.
+        API de Geolocalización para dispositivos que lo soporten.
+        API Storage. Facilidad de almacenamiento persistente en local, con bases de datos (basadas en SQLite) o con almacenamiento de objetos por aplicación o por dominio Web (Local Storage y Global Storage). Se dispone de una Base de datos con la posibilidad de hacer consultas SQL.
+        WebSockets. API de comunicación bidireccional entre páginas. Similar a los Sockets de C.
+        WebWorkers. Hilos de ejecución en paralelo.
+        Estándar futuro. System Information API. Acceso al hardware a bajo nivel: red, ficheros, CPU, memoria, puertos USB, cámaras, micrófonos... Muy interesante, pero con numerosas salvedades de seguridad.</p>
+
+	  <h2>Conclusiones   </h2>
+		<p>HTML es necesario para estructurar el contenido de las web que hoy conocemos y sin duda fue evolucionando con el tiempo</p>
+		<p>Sin lugar a dudas hay que aprenderlo para ir mejorando la calidad de las paginas web que utilizamos.</p>
+    -->
