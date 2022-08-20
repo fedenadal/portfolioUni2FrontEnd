@@ -1,254 +1,584 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<link rel="stylesheet" href="styles.css">
-  <title>index portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/e960b58c14.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <script src="https://kit.fontawesome.com/e960b58c14.js" crossorigin="anonymous"></script>
+  <title>maqueta portfolio</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">dalequesaleelportfoliooo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <!--div de particulas-->
+  <div id="particles-js"></div>
 
-  <header class="container-fluid d-flex h-100 w-100">
-    <div class="row pt-3">
-      <!--carrusel de fotos-->
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner h-100">
-                <div class="carousel-item active">
-                  <img src="imagenes\atoq-1.jpg" class="d-block  w-100" alt="..." width="640" height="270">
+  <!--Nav Bar-->
+  <nav>
+    <nav class="navbar navbar-dark bg-dark fixed-top ">
+      <div class="container-fluid ">
+        <a class="navbar-brand m-0 p-0 w-90 d-flex" href="#">
+          <img src="assets\IMAGES\APLogo-20-20.png" alt="" width="150" height="70">
+        </a>
+        <div class="h-100 w-20 pt-2">
+          <div class="d-flex justify-content-end">
+            <i class="fa-brands fa-github p-3 text-light"></i>
+            <i class="fa-brands fa-linkedin-in p-3 text-light"></i>
+            <i class="fa-brands fa-telegram p-3 text-light "></i>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span>LOGIN</span>
+            </button>
+          </div>
+        </div>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Hola!</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <form>
+                <div class="mb-3">
+
+                  <label for="idE" class="form-label">Correo</label>
+
+                  <input type="email" class="form-control" id="idE" aria-describedby="idEH">
+
+                  <div id="idEH" class="form-text">Debe ser un correo válido.</div>
+
                 </div>
-                <div class="carousel-item">
-                  <img src="imagenes\atoq2.jpg" class="d-block  w-100" alt="..."width="640" height="270">
+
+                <div class="mb-3">
+
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+
                 </div>
-                <div class="carousel-item">
-                  <img src="imagenes\atoq3.jpg" class="d-block  w-100" alt="..."width="640" height="270">
+
+                <div class="mb-3 form-check">
+
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+                  <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+
                 </div>
-              </div>
-      </div>
-      <!--carta con foto-->
-      <div class="col-12 col-lg-4 m-1">
-          <div class="card h-100  bg-primary">
-            <div class="card-body">
-              <div class="d-flex ">
-                  <img src="imagenes\IMG_20190304_185102366_HDR.jpg" alt="" class="border border-danger border-3 rounded-circle " width="180" height="150">
-              <!--</div>
-              <div class="d-flex justify-content-center"> -->
-                  <div class="p-2 ">
-                      <h6 class="m-0 h6">un h6 que diga algo  </h6>
-                      <p class="m-0 hs.5">un p que lo explique un poco</p>
-                  </div>
-              </div>
-              <div>
-                  <p class="hs.5 pt-2">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, ipsa cupiditate.  provident? </p>
-              </div>
-             
-           </div>
+
+                <button type="submit" class="btn btn-primary">Iniciar Secion</button>
+                <button type="submit" class="btn btn-primary">Usuario Nuevo</button>
+
+              </form>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+
+                  <li><a class="dropdown-item" href="#">Network</a></li>
+                  <li><a class="dropdown-item" href="#">Talleres</a></li>
+                  <li><a class="dropdown-item" href="#">Servicios</a></li>
+                  <li><a class="dropdown-item" href="#">Actividades</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">buscar</a></li>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form>
+
+                </ul>
+              </li>
+            </ul>
 
           </div>
+        </div>
       </div>
-      <!--about-->
-     <div class="col-12 col-lg-5 m-1 ms-0 align-self-center">
-        <div class="card h-lg-75  bg-primary">
-          <div class="card-body">
-            <div class="d-flex">
-              <div class="ps-lg-1">
-                  <ul class="m-0 h5 " >un par de items 
-                   <p class="editable estilizable">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis fugiat maiores illo repudiandae ea, nesciunt veniam modi minima rem placeat vitae velit corporis minus ipsum. Iusto ad quidem iste?</p>
-                  </ul>
-
-                  <ul class="m-0 h5">un par de items </ul>
-                  <ul class="m-0 h5">un par de items </ul>
-                  <ul class="m-0 h5">un par de items </ul>
-              </div>
-             </div>
+    </nav>
+  </nav>
+  <!--Header-->
+  <header class="container-fluid vw-100 h-100">
+    <div class="row  pt-5">
+      <div class="col-12 pt-3">
+        <div class="card  h-100 w-100  ps-3 bg-transparent">
+          <h1 class="fn">f[N] :</h1>
         </div>
-
-        </div>
-     </div>
-     <!--botonera-->
-     <div class="col-12 col-lg-2 m-1 ms-0 align-self-end justify-content-end">
-        <div class="card h-90 w-100 ">
-          <div class="card-body ">
-            <div class="d-flex">
-              <div class="ps-lg-1">
-                <button type="button" class="btn btn-secondary m-1" disabled>Button</button>
-                <button type="button" class="btn btn-secondary m-1" disabled>Button</button>
-                <button type="button" class="btn btn-secondary m-1" disabled>Button</button>
-                <button type="button" class="btn btn-secondary m-1" disabled>Button</button>
-              </div>
-           </div>
-        </div>
-
-        </div>
-     </div>
+      </div>
     </div>
   </header>
- 
-  <main class="container-fluid d-flex  ">
-       <div class="row h-100 w-100">
-        <!--EDUCACION-->
-          <div class="col-12 p-2">
-            <article class="card h-100  bg-danger">
-                <div class="card-body">
-                    <div class="d-flex align-items-center justify-content-start">
-                        <div class="ps-lg-2">
-                            <ul class="m-0 h6">un h6 que diga algo  </ul>
-                            <p class="m-0 hs.5">un p que lo explique un poco</p>
-                            <ul class="m-0 h6">un h6 que diga algo  </ul>
-                            <p class="m-0 hs.5">un p que lo explique un poco</p>
-                            <ul class="m-0 h6">un h6 que diga algo  </ul>
-                            <p class="m-0 hs.5">un p que lo explique un poco</p>
-                            <ul class="m-0 h6">un h6 que diga algo  </ul>
-                            <p class="m-0 hs.5">un p que lo explique un poco</p>
-                        </div>
-                    </div>            
+
+  <div class="cotainer h-100 w-100 ">
+    <div class="row ms-sm-2">
+
+      <!--aside-->
+      <aside class="d-none d-sm-block col-3 col-md-2 col-lg-2  p-0 pb-1 pt-1">
+        <div class="card h-100 w-100 bg-transparent pt-2">
+          <video class="pause-video js-pause-video paused rounded-circle" autoplay="" loop="" muted="" playsinline=""
+            tabindex="0">
+            <source src="DSCN4730.AVI.mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="card h-10 w-100 bg-transparent p-4 pt-3">
+            <h4>Fede Nadal</h4>
+            <h6>Buenos Aires, Argentina</h6>
+            <bu class="btn btn-dark bottom">CV.pdf</bu>
+          </div>
+          <!-- <div class="card h-10 w-100 bg-transparent p-2 pt-5 sticky-top">
+            <ul>Network</ul>
+            <ul>Talleres</ul>
+            <ul>Servicios</ul>
+            <ul>Actividades</ul>
+            <ul>Agenda</ul>
+            
+          </div>
+
+        </div>
+      -->
+      </aside>
+
+
+      <main class="col-12 col-sm-9 col-md-10 col-lg-10">
+        <div class="cotainer h-100 w-100 p-2">
+
+          <!-- fila primera presentacion-->
+          <div class="row p-1">
+
+            <div class="col-lg-12 p-1">
+              <article class="card  h-100 w-100  text-light bg-transparent pt-1">
+                <ul>Full-Stack Developer Junior </ul>
+                <ul>Malabarista transepistémico del devenir</ul>
+                <ul>y algun par de cosas mas </ul>
+                <ul>transmitiendo en vivo desde GuenosAires, Argentina </ul>
+                <ul>...ponele</ul>
+                <!--botonera contacto-->
+                <button class="btn btn-dark bottom" type="submit">Consulta</button>
+              </article>
+            </div>
+          </div>
+
+          <!--remplazo de menu aside en mobile-->
+          <div class="row p-1 d-block d-sm-none ">
+            <article class="card  h-50 w-100">
+              <video class="pause-video js-pause-video paused" autoplay="" loop="" muted="" playsinline="" tabindex="0">
+                <source src="DSCN4730.AVI.mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="container-fluid h-100 w-100 p-0 m-0">
+                <div class="col-12">
+                  <div class="card h-100 w-100 bg-dark m-0 p-0">
+                    <p> Network || Talleres || Servicios || Actividades || Agenda || CV.pdf</p>
+                  </div>
                 </div>
             </article>
           </div>
-          <!--EXPERIENCIA LABORAL-->
-          <div class="col-12 p-2">
-          <article class="card h-100  bg-warning">
-              <div class="card-body">
-                  <div class="d-flex align-items-center justify-content-end">
-                      <div class="ps-lg-2">
-                          <ul class="m-0 h6">un h6 que diga algo  </ul>
-                          <p class="m-0 hs.5">un p que lo explique un poco</p>
-                          <ul class="m-0 h6">un h6 que diga algo  </ul>
-                          <p class="m-0 hs.5">un p que lo explique un poco</p>
-                          <ul class="m-0 h6">un h6 que diga algo  </ul>
-                          <p class="m-0 hs.5">un p que lo explique un poco</p>
-                          <ul class="m-0 h6">un h6 que diga algo  </ul>
-                          <p class="m-0 hs.5">un p que lo explique un poco</p>
-                      </div>
-                  </div>            
+
+        </div>
+    </div>
+
+    <!--fila tarjetas con info-->
+    <div class="row p-5 pt-2">
+      <div class="col-12 col-lg-4 p-2">
+
+        <!--skils-->
+        <article class="card  h-100 w-100 bg-transparent">
+          <h1>Hard and Soft skils</h1>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <!--IT-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  I.T
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul>
+                    <h3> HTML </h3>
+                  </ul>
+                  <ul>
+                    <h3> CSS </h3>
+                  </ul>
+                  <ul>
+                    <h3> JS </h3>
+                  </ul>
+                  <ul>
+                    <h3> Angular</h3>
+                  </ul>
+                  <ul>
+                    <h3> Spreeng boot </h3>
+                  </ul>
+                  <ul>
+                    <h3> JAVA</h3>
+                  </ul>
+                  <ul>
+                    <h3> My SQL </h3>
+                  </ul>
+
+                  <ul>
+                    <h3> IDE ARDUINO </h3>
+                  </ul>
+
+
+                </div>
               </div>
-          </article>
-      
-      
-          
-          </div>
-          <!--H y S Skils-->
-         <div class="col-12 p-2">
-          <article class="card h-100 bg-primary">
-              <div class="card-body">
-                  <div class="d-flex">
-                      <div class="ps-lg-2">
-                          <ul class="m-0 h6">un h6 que diga algo  </ul>
-                          <p class="m-0 hs.5">un p que lo explique un poco</p>
-                          <ul class="m-0 h6">un h6 que diga algo  </ul>
-                          <p class="m-0 hs.5">un p que lo explique un poco</p>
-                          <ul class="m-0 h6">un h6 que diga algo  </ul>
-                          <p class="m-0 hs.5">un p que lo explique un poco</p>
-                          <ul class="m-0 h6">un h6 que diga algo  </ul>
-                          <p class="m-0 hs.5">un p que lo explique un poco</p>
-                      </div>
-                      
-                  </div>            
+            </div>
+            <!--IDIOMAS-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Idiomas
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+
+                  <ul>
+                    <h3> INGLES </h3>
+                  </ul>
+                  <ul>
+                    <h3> PORTUGUES </h3>
+                  </ul>
+                  <ul>
+                    <h3> FRANCES </h3>
+                  </ul>
+                  <ul>
+                    <h3> GUARANI </h3>
+                  </ul>
+                </div>
               </div>
-          </article>
+            </div>
+            <!--OTRAS HABILIDADES-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Sociocultrales, psicoafetivas et al.
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul>
+                    <h3> RESOLUCION DE PROBLEMAS </h3>
+                  </ul>
+                  <ul>
+                    <h3> MANEJO DE GRUPOS</h3>
+                  </ul>
+                  <ul>
+                    <h3> DIDACTICA Y PEDAGOGIA </h3>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <!--PROYECTOS-->
-          <div class="col-12 p-2">
-        <article class="card h-100  bg-success">
-            <div class="card-body">
-                <div class="d-flex align-items-center justify-content-end">
-                    <div class="ps-lg-2">
-                        <ul class="m-0 h6">un h6 que diga algo  </ul>
-                        <p class="m-0 hs.5">un p que lo explique un poco</p>
-                        <ul class="m-0 h6">un h6 que diga algo  </ul>
-                        <p class="m-0 hs.5">un p que lo explique un poco</p>
-                        <ul class="m-0 h6">un h6 que diga algo  </ul>
-                        <p class="m-0 hs.5">un p que lo explique un poco</p>
-                        <ul class="m-0 h6">un h6 que diga algo  </ul>
-                        <p class="m-0 hs.5">un p que lo explique un poco</p>
-                    </div>
-                    
-                </div>            
+        </article>
+      </div>
+
+      <div class="col-12 col-lg-4 p-2">
+        <!--Formacion-->
+        <article class="card  h-100 w-100 bg-transparent">
+          <h1>Formación</h1>
+          <div class="accordion accordion-flush" id="accordionFlushExampleF">
+            <div class="accordion-item">
+              <!--Programación & Desarrollo-->
+              <h2 class="accordion-header" id="flush-headingOneF">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOneF" aria-expanded="false" aria-controls="flush-collapseOneF">
+                  Programación & Desarrollo
+                </button>
+              </h2>
+              <div id="flush-collapseOneF" class="accordion-collapse collapse" aria-labelledby="flush-headingOneF"
+                data-bs-parent="#accordionFlushExampleF">
+                <div class="accordion-body">
+                  <ul>
+                    <h3> Argentina programa</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ponele</p>
+                  </ul>
+
+                  <ul>
+                    <h3> utn arduino</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ponele</p>
+                  </ul>
+
+
+                </div>
+              </div>
+              <!--antropologia-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoF">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwoF" aria-expanded="false" aria-controls="flush-collapseTwoF">
+                    Antropología
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoF" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoF"
+                  data-bs-parent="#accordionFlushExampleF">
+                  <div class="accordion-body">
+
+                    <ul>
+                      <h3> uba puan filo </h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ponele</p>
+                    </ul>
+
+                    <ul>
+                      <h3> congresos </h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ponele</p>
+                    </ul>
+
+                    <ul>
+                      <h3> becas e intercambios </h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ponele</p>
+                    </ul>
+
+
+                  </div>
+                </div>
+              </div>
+              <!--OTROS-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeF">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThreeF" aria-expanded="false"
+                    aria-controls="flush-collapseThreeF">Otras</button>
+                </h2>
+                <div id="flush-collapseThreeF" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeF"
+                  data-bs-parent="#accordionFlushExampleF">
+                  <div class="accordion-body">
+                    <ul>
+                      <h3> ISAS </h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ponele</p>
+                    </ul>
+                    <ul>
+                      <h3> taller de coso </h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ponele</p>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
         </article>
-          </div>
       </div>
-                  
-  </main>
-    
-  <footer class="bottom text-bg-dark p-3 " >
-      <p>como sera esto del maquetado mixto.. averr</p>
-  </footer>
+      <!--experiencia laboral-->
+      <div class="col-12 col-lg-4 p-2">
+        <article class="card  h-100 w-100 bg-transparent">
+          <h1>Experiecia Laboral</h1>
+          <div class="accordion accordion-flush" id="accordionFlushExampleEL">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOneEL">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOneEL" aria-expanded="false" aria-controls="flush-collapseOneEL">
+                  Programación & Desarrollo
+                </button>
+              </h2>
+              <div id="flush-collapseOneEL" class="accordion-collapse collapse" aria-labelledby="flush-headingOneEL"
+                data-bs-parent="#accordionFlushExampleEL">
+                <div class="accordion-body">
+                  <h2> ...</h2>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwpEL">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwoEL" aria-expanded="false" aria-controls="flush-collapseTwoEL">
+                  Docencia </button>
+              </h2>
+              <div id="flush-collapseTwoEL" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoEL"
+                data-bs-parent="#accordionFlushExampleEL">
+                <div class="accordion-body">
+                  <ul>
+                    <h3> ISAS </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ponele</p>
+                  </ul>
+                  <ul>
+                    <h3> tutorias </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ponele</p>
+                  </ul>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script src="codigo.js"></script>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThreeEL">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThreeEL" aria-expanded="false" aria-controls="flush-collapseThreeEL">
+                  Otros
+                </button>
+              </h2>
+              <div id="flush-collapseThreeEL" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeEL"
+                data-bs-parent="#accordionFlushExampleEL">
+                <div class="accordion-body">
+                  <ul>
+                    <h3> eolo </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ponele</p>
+                  </ul>
+                  <ul>
+                    <h3> uban biking </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ponele</p>
+                  </ul>
+                  <ul>
+                    <h3> bike and cofee </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ponele</p>
+                  </ul>
+                  <ul>
+                    <h3> ushuaia </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ponele</p>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+    <!--carrucel-->
+    <div class="row p-1 pb-3 p-md-5 pt-md-2  ">
+      <div class="col-12  ">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class="active"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" class="active"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="IMG_20190304_183043425_BURST001.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <li><a href="https://google.com" target="_blank" rel="noopener noreferrer">Website</a></li>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="IMG_20190304_183043425_BURST001.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="IMG_20190304_183043425_BURST001.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+
+      <!--formulario consultas-->
+      <div class="col-lg-12 p-0">
+        <article class="card  h-100 w-100  text-light bg-transparent pt-1">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-sm">
+                        <form class="form-horizontal" method="post">
+                            <fieldset>
+                                <legend class="text-center header">Contact us</legend>
+
+                                <div class="form-group">
+                                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                  <div class="col-md-11">
+                                      <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                                  </div>
+                              </div>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-11">
+                                        <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                    </div>
+                                </div>
+      
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                    <div class="col-md-11">
+                                        <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                    <div class="col-md-11">
+                                        <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                    </div>
+                                </div>
+                  
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </article>
+      </div>
+
+  </div>
+
+  <footer>
+    <div class="cotainer h-100 w-100 ">
+      <div class="row ">
+        <div class="bottom d.flex text-bg-dark p-3 ">
+          <p>como sera esto del maquetado mixto.. averr</p>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-telegram"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--particulas?-->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="particulas.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="codigo.js"></script>
+
+  </script>
 </body>
 
 </html>
-
-<!--<h1> Título principal de la practica HTML</h1>   
-	<p>Estamos aprendiendo HTML y necesitamos practicar para que se nos fije el conocimiento, en poco tiempo voy a poder maquetar un sitio web completo. en este documento de practica veremos los distintos HTML que podemos encontrar </p>
-
-	  <h2>Primero HTML semántico.</h2>  
-		    <p>HTML Semántico es el uso de las etiquetas HTML para reforzar la semántica, o el significado, de la información en las páginas web más que simplemente redefinir su forma de presentación (apariencia). El HTML semántico es procesado por los navegadores web regulares así como por muchos otros agentes de usuarios. Las CSS son usadas para sugerir la presentación de la página a usuarios humanos.</p>
-		  <h3>Primer subtema Usos.</h3>
-			<p>DHTML permite a los desarrolladores añadir a las páginas efectos que de otra manera serían difíciles de alcanzar. En resumen: los lenguajes de scripting sirven para cambiar la estructura DOM.</p>
-		  <h3>Segundo subtema Compatibilidad con navegadores. </h3> 
-			<p>El soporte para DHTML con acceso al DOM fue introducido en Internet Explorer 4.0. Aunque había otra implementación más básica en Netscape Navigator 4.0, no todos los elementos HTML eran representados en el DOM.</p>
-	  
-      <h2>Segunda idea principal HTML5.</h2>  
-		    <p>HTML 5 (HyperText Markup Language, versión 5) es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. HTML5 específica dos variantes de sintaxis para HTML: una «clásica», HTML (text/html), conocida como HTML5, y una variante XHTML conocida como sintaxis XHTML 5 que deberá servirse con sintaxis XML.</p>
-		  <h3>Primer subtema Nuevos elementos </h3>
-			<p>HTML5 establece una serie de nuevos elementos y atributos que reflejan el uso típico de los sitios web modernos. Algunos de ellos son técnicamente similares a las etiquetas div y span, pero tienen un significado semántico, como por ejemplo nav (bloque de navegación del sitio web) y footer.</p>
-		  <h3>Segundo subtema Nuevas API y Javascript </h3>
-			<p>API para hacer Drag & Drop. Mediante eventos.
-        API para trabajar Off-Line. Permite descargar todos los contenidos necesarios y trabajar en local.
-        API de Geolocalización para dispositivos que lo soporten.
-        API Storage. Facilidad de almacenamiento persistente en local, con bases de datos (basadas en SQLite) o con almacenamiento de objetos por aplicación o por dominio Web (Local Storage y Global Storage). Se dispone de una Base de datos con la posibilidad de hacer consultas SQL.
-        WebSockets. API de comunicación bidireccional entre páginas. Similar a los Sockets de C.
-        WebWorkers. Hilos de ejecución en paralelo.
-        Estándar futuro. System Information API. Acceso al hardware a bajo nivel: red, ficheros, CPU, memoria, puertos USB, cámaras, micrófonos... Muy interesante, pero con numerosas salvedades de seguridad.</p>
-
-	  <h2>Conclusiones   </h2>
-		<p>HTML es necesario para estructurar el contenido de las web que hoy conocemos y sin duda fue evolucionando con el tiempo</p>
-		<p>Sin lugar a dudas hay que aprenderlo para ir mejorando la calidad de las paginas web que utilizamos.</p>
-    -->

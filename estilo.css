@@ -1,0 +1,66 @@
+#particles-js {
+height: 100vh;
+width: 100%;
+position: fixed;
+z-index: -1;
+}
+
+body {background: #000;
+color: #fff;
+font-family: trajan;
+font-size: 18px;}
+
+.fn {
+    font-family:trajan;
+    font-size 24px;}
+
+.accordion-button.collapsed{
+    background: linear-gradient(to left, rgb(103, 103, 105), rgb(0, 0, 0));
+    color: rgb(255, 255, 255); 
+    border-color: #020202;
+    border-width: 3px;
+    border-style: solid;    
+}
+.accordion-button.collapsed:hover{
+    background: linear-gradient(to left, rgb(103, 103, 105), rgb(0, 0, 0));
+    color: rgb(122, 49, 156); 
+    border-color: #8942e6;
+    border-width: 3px;
+    border-style: solid;
+    animation-name: example;
+  animation-duration: 1s;
+}
+
+.btn.btn-dark:hover{
+    color: rgb(122, 49, 156); 
+    border-color: #8942e6;
+    border-width: 3px;
+    border-style: solid;
+    animation-name: example;
+  animation-duration: 1s;
+}
+
+@keyframes example {
+  from {color: rgb(85, 195, 247);
+    border-color: #3fbbf5;}
+  to {color: rgb(114, 42, 161);
+    border-color: #8942e6;}
+}
+.accordion-body{
+    background: linear-gradient(to left, rgb(86, 86, 87), rgb(0, 0, 0));
+    color: rgb(255, 255, 255); 
+    border-color: #020202;
+    border-width: 3px;
+    border-style: solid;
+
+}
+.container {
+    position: relative;
+    z-index: 2;
+    opacity: .85;
+}
+.container-fluid {
+    position: relative;
+    z-index: 2;
+}
+
