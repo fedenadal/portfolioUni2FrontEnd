@@ -1,0 +1,11 @@
+.flecha{
+display:block ;
+z-index: 2;
+width: min-content;
+position:relative;
+}
+.body{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-right: 2%;
+}

@@ -1,0 +1,89 @@
+<header class=" header d-block top" >
+
+    <nav class="navbar navbar-dark bg-dark fixed-top ">
+      <div class="container-fluid ">
+        <a class="navbar-brand m-0 p-0 w-90 h-100 d-flex" href="#">
+          <img src=".\assets\APLogo-20-20.png" alt="" width="150" height="70">
+        </a>
+        <div class="h-100 w-20 pt-2">
+          <div class="d-flex justify-content-end">
+            <i class="fa-brands fa-github p-3 text-light"></i>
+            <i class="fa-brands fa-linkedin-in p-3 text-light"></i>
+            <i class="fa-brands fa-telegram p-3 text-light "></i>
+  
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+              aria-controls="offcanvasDarkNavbar">
+              <span>LOGIN</span>
+            </button>
+          </div>
+        </div>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header ">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Hola!</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <form>
+                <div class="mb-3">
+  
+                  <label for="idE" class="form-label">Correo</label>
+  
+                  <input type="email" class="form-control" id="idE" aria-describedby="idEH">
+  
+                  <div id="idEH" class="form-text">Debe ser un correo válido.</div>
+  
+                </div>
+  
+                <div class="mb-3">
+  
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+  
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+  
+                </div>
+  
+                <div class="mb-3 form-check">
+  
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  
+                  <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+  
+                </div>
+  
+                <button type="submit" class="btn btn-primary">Iniciar Secion</button>
+                <button type="submit" class="btn btn-primary ms-2">Usuario Nuevo</button>
+  
+              </form>
+  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+  
+                  <li><a class="dropdown-item" href="#">Network</a></li>
+                  <li><a class="dropdown-item" href="#">Talleres</a></li>
+                  <li><a class="dropdown-item" href="#">Servicios</a></li>
+                  <li><a class="dropdown-item" href="#">Actividades</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">buscar</a></li>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form>
+  
+                </ul>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+      </div>
+    </nav>
+</header>
