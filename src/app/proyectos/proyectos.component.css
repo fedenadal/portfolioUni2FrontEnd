@@ -1,5 +1,33 @@
 #carouselExampleDark{
-    margin-top: 7%;
-    width: auto;
-    height: auto;
+    margin-top: 90px;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-height: 30ul;
+}
+
+
+#carouselExampleDark2{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-height: 30ul
+}
+
+#carouselExampleDark3{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0px;
+    max-height: 30ul
+}
+
+.botonNav{
+    display: block;
+    position: relative;
+    color: aliceblue;
+    width: 100%;
+   margin-top: 5px;
+   margin-bottom: 80px;
+   background: rgb(22, 21, 21);
+    z-index: 2;
 }

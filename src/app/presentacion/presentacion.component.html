@@ -3,11 +3,11 @@
 
     <!--aside-->
     <aside class="col-12  col-md-3 col-lg-2 p-0 pb-1 pt-1">
-      <div class="card h-100 w-100 bg-transparent pt-2">
+      <div class="card h-100 w-100 bg-transparent">
         <div class="d-block d-sm-none p-1">
           <h1>Fede Nadal.</h1>
         </div>
-        <video class="pause-video js-pause-video paused rounded-circle" [muted]="true" autoplay="" loop=""
+        <video class="videoPresentacion rounded-circle" [muted]="true" autoplay="" loop=""
           playsinline="" tabindex="0">
           <source src=".\assets\videoPresentacion.mp4">
           Your browser does not support the video tag.
@@ -29,14 +29,14 @@
         <!-- fila primera presentacion-->
         <div class="row p-1">
           <div class="col-lg-12 p-1">
-            <article class="card  h-100 w-100  text-light bg-transparent pt-1">
+            <article class="card  h-100 w-100  text-light bg-dark opacity-75 pt-1">
 
               <h4 *ngIf="miPortfolio">{{miPortfolio.tituloCartaPresentacion}}</h4>
               <h5 *ngIf="miPortfolio" class="ps-4">{{miPortfolio.subtituloCartaPresentacion}}</h5>
               <ul *ngIf="miPortfolio">{{miPortfolio.textoPrueba}}</ul>
               <ul *ngIf="miPortfolio">{{miPortfolio.textoPrueba}}</ul>
               <!--botonera contacto-->
-              <button class="btn btn-dark bottom" type="submit">Network || Talleres || Servicios || Actividades || Agenda </button>
+              <button class="btn btn-dark bottom" [routerLink]="['/cv']">...si te interesa, te invito a recorrer mi formacion y experiencia laboral </button>
               </article>
           </div>
         </div>

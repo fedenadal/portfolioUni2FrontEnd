@@ -13,13 +13,17 @@ import { PortfolioService } from './servicios/portfolio.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { PresentacionComponent } from './presentacion/presentacion.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { CVComponent } from './cv/cv.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { HeaderComponent } from './header/header.component';
+
+//particles
+import { NgParticlesModule } from "ng-particles";
+
+
 
 
 //CONST DE ROUTING//
@@ -35,7 +39,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    EncabezadoComponent,
     PresentacionComponent,
     FooterComponent,
     ProyectosComponent,
@@ -47,7 +50,8 @@ const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
-    HttpClientModule
+    HttpClientModule,
+    NgParticlesModule,
   ],
   providers: [
     PortfolioService

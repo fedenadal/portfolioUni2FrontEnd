@@ -5,7 +5,7 @@
     "videoPresentacion": "",
     "tituloCartaPresentacion": "Full-Stack Developer Jr.",
     "subtituloCartaPresentacion": "malabarista transepistemico del devenir",
-    "textoPrueba": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptates voluptatibus totam debitis aut sit asperiores, iusto commodi eveniet vel laboriosam, repellat magni? Voluptatum iusto.omnis fuga, repellendus aut eos!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptates voluptatibus totam debitis aut sit asperiores, iusto commodi eveniet vel laboriosam, repellat magni? Voluptatum iusto omnis fuga, repellendus aut eos!",
+    "textoPrueba": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptates voluptatibus totam debitis aut sit asperiores, iusto commodi eveniet vel laboriosam, repellat magni? Voluptatum iusto.omnis fuga, repellendus aut eos!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptates voluptatibus totam debitis aut sit asperiores, iusto commodi eveniet vel laboriosam, repellat magni? Voluptatum iusto omnis fuga, repellendus aut eos!.",
     "educacion": {
         "tecnologias": [
             {
@@ -151,4 +151,5 @@
     
         ]
     }
-}
+    
+    }

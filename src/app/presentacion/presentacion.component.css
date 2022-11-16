@@ -5,7 +5,13 @@ width: min-content;
 position:relative;
 }
 .body{
-    margin-top: 5%;
-    margin-bottom: 3%;
+    margin-top:70px;
+    margin-bottom: 5%;
     margin-right: 2%;
+    margin-left: 1%;
+
 }
+ .videoPresentacion {
+    border: solid; 
+    border-color: aliceblue;
+ }
