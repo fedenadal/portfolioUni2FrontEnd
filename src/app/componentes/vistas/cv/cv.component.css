@@ -1,0 +1,22 @@
+.body {
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+
+.botonLinkProyectos {
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin-bottom: 5%;
+    width: 100%;
+    height: auto;
+    background: rgb(67, 65, 65);
+}
+
+.accordion-button { 
+    border-radius: 80%;
+    border: solid 1px white
+}
+
+.btn-link {color:white}
+

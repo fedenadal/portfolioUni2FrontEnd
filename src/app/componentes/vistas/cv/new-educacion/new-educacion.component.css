@@ -1,0 +1,10 @@
+.container {
+    margin-top: 20%;
+    display:flex;
+    align-items: centers;
+    justify-content:center ;
+}
+
+.btn{
+    color: white;
+}

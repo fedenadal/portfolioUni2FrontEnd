@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreS">Habilidad </label>
+                    <input type="text" class="form-control" id="nombreS" name="nombreS" [(ngModel)]="nombreS" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="areaE">Area</label>
+                    <input type="text" class="form-control" id="areaS" name="areaS" [(ngModel)]="areaS" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcionE">Nivel (0-100)</label>
+                    <input type="text" class="form-control" id="nivelS" name="nivelS"
+                        [(ngModel)]="nivelS" required>
+                </div>
+
+                <button class="btn btn-secundary" type="submit" >Agregar habilidad</button>
+            </form>
+        </div>
+    </div>
+</div>

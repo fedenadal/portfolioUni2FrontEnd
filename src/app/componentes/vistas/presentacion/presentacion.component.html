@@ -1,0 +1,47 @@
+<div class="cotainer mt-5 pt-5 ms-2 me-4 h-100 w-100  ">
+  <div class="row ms-sm-2 body">
+
+    <!--aside-->
+    <aside class="col-12  col-md-3 col-lg-2 p-0 pb-1 pt-1">
+      <div class="card h-100 w-100 bg-transparent">
+        <div class="d-block d-sm-none p-1">
+          <h1>By Fede Nadal.</h1>
+        </div>
+        <video class="videoPresentacion rounded-circle" [muted]="true" autoplay="" loop=""
+          playsinline="" tabindex="0">
+          <source src="..\assets\videoPresentacion.mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="card h-10 w-100 bg-transparent p-4 pt-3">
+          <h4>{{persona.nombre}} {{persona.apellido}} </h4>
+          <h6>{{persona.ubicacion}}</h6>
+          <a href="assets\CV Federico Nadal 2022.pdf"  class="btn btn-dark bottom" download="CAMBIAR POR EL Cv ACCTUALIZADO ANTES DE DEPLOYAR!.pdf"> CV.pdf </a>
+          <br>
+
+        </div>
+      </div>
+    </aside>
+
+
+    <main class="col-12 col-sm-9 col-md-9 col-lg-10">
+      <div class="cotainer h-100 w-100 p-2">
+
+        <!-- fila primera presentacion-->
+        <div class="row p-1">
+          <div class="col-lg-12 p-1">
+            <article class="card  h-100 w-100  text-light bg-dark opacity-75 pt-1">
+              <br>
+              <h4 *ngIf="persona">{{persona.titulo}}<button *ngIf="isLogged==true"  type="button" class="btn btn-link" [routerLink]="['/editPresentacion/1']"><i class="bi bi-pencil" ></i> </button> </h4>
+              <h5 *ngIf="persona" class="ps-4">{{persona.subtitulo}}</h5>
+              <ul *ngIf="persona">{{persona.descripcion}}</ul>
+              
+              <!--botonera contacto-->
+              <button class="btn btn-dark bottom" [routerLink]="['/cv']">...si te interesa, te invito a recorrer mi formacion y experiencia laboral </button>
+              
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
