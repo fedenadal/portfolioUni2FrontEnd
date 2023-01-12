@@ -7,7 +7,7 @@ import { Persona } from '../model/persona';
   providedIn: 'root'
 })
 export class PersonaService {
-persURL='http://localhost:8080/personas/'
+persURL='portfoliobackend-production-1b35.up.railway.app/personas/'
   constructor(private httpClient: HttpClient) { }
  
   public lista():Observable<Persona[]>{
